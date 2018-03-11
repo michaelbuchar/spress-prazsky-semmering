@@ -4,6 +4,8 @@ ordering: 30
 details:
   request: true
   tracks: 4
+  latitude: 50.0551467
+  longitude: 14.3777814
   altitude: 290
   picture: jinonice.jpg
   picture_cc: 'VitVit, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>'

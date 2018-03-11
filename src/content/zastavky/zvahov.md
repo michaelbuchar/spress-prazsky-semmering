@@ -4,6 +4,8 @@ ordering: 20
 details:
   request: true
   tracks: 2
+  latitude: 50.0456628 
+  longitude: 14.4023656
   altitude: 255
   picture: zvahov.jpg
   picture_cc: 'Honza Groh, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>'

@@ -2,6 +2,11 @@
 layout: default
 ---
 
+{% block head %}
+<script src="https://api.mapy.cz/loader.js"></script>
+<script>Loader.load()</script>
+{% endblock %}
+
 {% block content %}
 
 <p style="float: left; padding-right: 3em;"><a href="{{ page.details.picture_url }}"><img src="{{ site.url }}/assets/img/{{ page.details.picture }}" /></a><br />
@@ -22,5 +27,15 @@ layout: default
 <div style="clear: both"></div>
 
 {{ page.content }}
+
+
+<div id="map" style="width:700px; height:450px;"></div>
+<script type="text/javascript">
+    var center = SMap.Coords.fromWGS84({{ page.details.longitude }}, {{ page.details.latitude }});
+    var map = new SMap(JAK.gel("map"), center, 16);
+    map.addDefaultLayer(SMap.DEF_BASE).enable();
+    map.addDefaultControls();	      	      
+</script>
+
 
 {% endblock %}
